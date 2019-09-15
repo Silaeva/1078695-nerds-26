@@ -31,7 +31,8 @@
       <form action="https://echo.htmlacademy.ru" method="get" oninput="">
         <fieldset>
           <legend>Стоимость:</legend>
-          <input type="range" min="0" max="20000" aria-lable="Диапазон стоимости"><br>
+          <label class="visually-hidden" for="range-of-cost">Диапазон стоимости</label><br>
+          <input type="range" min="0" max="20000" id="range-of-cost"><br>
           <span>От</span>
           <output name="from">0</output>
           <span>До</span>
