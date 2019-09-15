@@ -27,14 +27,75 @@
 
   <main>
     <section>
-      <h2>Фильтр товаров</h2>
-
-      <!--Здесь будет форма сортировки/фильтр -->
-
+      <h2 class="visually-hidden">Фильтр товаров</h2 >
+      <form action="https://echo.htmlacademy.ru" method="get" oninput="">
+        <fieldset>
+          <legend>Стоимость:</legend>
+          <input type="range" min="0" max="20000" aria-lable="Диапазон стоимости"><br>
+          <span>От</span>
+          <output name="from">0</output>
+          <span>До</span>
+          <output name="to">15000</output>
+        </fieldset>
+        <fieldset>
+          <legend>Сетка:</legend>
+          <ul>
+            <li>
+              <input type="radio" name="grid" value="adaptive" id="adaptive" checked>
+              <label for="adaptive">Адаптивная</label>
+            </li>
+            <li>
+              <input type="radio" name="grid" value="fixed" id="fixed">
+              <label for="fixed">Фиксированная</label>
+            </li>
+            <li>
+              <input type="radio" name="grid" value="stretch" id="stretch">
+              <label for="stretch">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Особенности:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="slider" id="slider" checked>
+              <label for="slider">Слайдер</label>
+            </li>
+            <li>
+              <input type="checkbox" name="block-features" id="block-features">
+              <label for="block-features">Блок преимуществ</label>
+            </li>
+            <li>
+              <input type="checkbox" name="news" id="news" checked>
+              <label for="news">Новости</label>
+            </li>
+            <li>
+              <input type="checkbox" name="gallery" id="gallery">
+              <label for="gallery">Галерея</label>
+            </li>
+            <li>
+              <input type="checkbox" name="basket" id="basket">
+              <label for="basket">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
     </section>
 
     <section>
-      <h2>Список вариантов дизайна</h2>
+      <h2 class="visually-hidden">Список вариантов дизайна</h2>
+      <div>
+        <p>Сортировать:</p>
+        <ul>
+          <li><a href="">По цене</a></li>
+          <li><a href="">По типу</a></li>
+          <li><a href="">По названию</a></li>
+        </ul>
+        <ul>
+          <li><a href="" class="visually-hidden">По убыванию</a></li>
+          <li><a href="" class="visually-hidden">По возрастанию</a></li>
+        </ul>
+      </div>
       <ul>
         <li>
           <h3>
@@ -100,15 +161,15 @@
         </li>
       </ul>
       <ul>
-        <li> <a>1</a></li>
-        <li> <a href="">2</a> </li>
-        <li> <a href="">3</a> </li>
-        <li> <a href="">Следующая</a></li>
+        <li><a>1</a></li>
+        <li><a href="">2</a></li>
+        <li><a href="">3</a></li>
+        <li><a href="">Следующая</a></li>
       </ul>
     </section>
 
     <section>
-      <h2>Контактная информация</h2>
+      <h2 class="visually-hidden">Контактная информация</h2>
       <div>
         <p>Nёrds design studio</p>
         <p>191186, Санкт-Петербург,<br>
@@ -121,18 +182,31 @@
 
   <footer>
     <ul>
-      <li><a href="">Вконтакте</a></li>
-      <li><a href="">Фейсбук</a></li>
-      <li><a href="">Инстаграм</a></li>
+      <li><a href="" class="visually-hidden">Вконтакте</a></li>
+      <li><a href="" class="visually-hidden">Фейсбук</a></li>
+      <li><a href="" class="visually-hidden">Инстаграм</a></li>
     </ul>
     <p>Давайте дружить, это выгодно!</p>
     <p>Скидка 10% для друзей из социальных сетей.</p>
   </footer>
   <section>
     <h2>Напишите нам</h2>
-    <!-- Здесь будет форма -->
-
-    <button type="button">Закрыть</button>
+    <form action="https://echo.htmlacademy.ru" method="post">
+       <p>
+         <label for="user-name">Ваше имя:</label><br>
+         <input type="text" name="name" placeholder="Имя Фамилия" id="user-name">
+       </p>
+       <p>
+         <label for="user-email">Ваш e-mail:</label><br>
+         <input type="text" name="email" placeholder="email@example.com" id="user-email">
+       </p>
+       <p>
+         <label for="user-message">Текст письма:</label><br>
+         <textarea name="message"  id="user-message" rows="4">В свободной форме</textarea>
+       </p>
+     <button type="submit">Отправить</button>
+    </form>
+    <button class="visually-hidden" type="button" >Закрыть</button>
   </section>
 </body>
 
