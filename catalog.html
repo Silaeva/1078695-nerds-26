@@ -27,12 +27,12 @@
 
   <main>
     <section>
-      <h2 class="visually-hidden">Фильтр товаров</h2 >
+      <h2 class="visually-hidden">Фильтр товаров</h2>
       <form action="https://echo.htmlacademy.ru" method="get" oninput="">
         <fieldset>
           <legend>Стоимость:</legend>
-          <label class="visually-hidden" for="range-of-cost">Диапазон стоимости</label><br>
-          <input type="range" min="0" max="20000" id="range-of-cost"><br>
+          <label class="visually-hidden" for="range-of-cost">Диапазон стоимости</label>
+          <input type="range" min="0" max="20000" id="range-of-cost">
           <span>От</span>
           <output name="from">0</output>
           <span>До</span>
@@ -95,10 +95,10 @@
           <li><a href="">По типу</a></li>
           <li><a href="">По названию</a></li>
         </ul>
-        <ul>
-          <li><a href="" class="visually-hidden">По убыванию</a></li>
-          <li><a href="" class="visually-hidden">По возрастанию</a></li>
-        </ul>
+        <p>
+          <a href="" aria-label="По убыванию"></a>
+          <a href="" aria-label="По возрастанию"></a>
+        </p>
       </div>
       <ul>
         <li>
@@ -177,7 +177,7 @@
       <div>
         <p>Nёrds design studio</p>
         <p>191186, Санкт-Петербург,<br>
-           ул. Б. Конюшенная, д. 19/8</p>
+          ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7 (812) 275-75-75</p>
         <a href="">Напишите нам</a>
       </div>
@@ -186,9 +186,9 @@
 
   <footer>
     <ul>
-      <li><a href="" class="visually-hidden">Вконтакте</a></li>
-      <li><a href="" class="visually-hidden">Фейсбук</a></li>
-      <li><a href="" class="visually-hidden">Инстаграм</a></li>
+      <li><a href="" aria-label="Студия Нёрдс во Вконтакте"></a></li>
+      <li><a href="" aria-label="Студия Нёрдс в Фейсбуке"></a></li>
+      <li><a href="" aria-label="Студия Нёрдс в Инстаграме"></a></li>
     </ul>
     <p>Давайте дружить, это выгодно!</p>
     <p>Скидка 10% для друзей из социальных сетей.</p>
@@ -196,21 +196,21 @@
   <section>
     <h2>Напишите нам</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
-       <p>
-         <label for="user-name">Ваше имя:</label><br>
-         <input type="text" name="name" placeholder="Имя Фамилия" id="user-name">
-       </p>
-       <p>
-         <label for="user-email">Ваш e-mail:</label><br>
-         <input type="text" name="email" placeholder="email@example.com" id="user-email">
-       </p>
-       <p>
-         <label for="user-message">Текст письма:</label><br>
-         <textarea name="message"  id="user-message" rows="4">В свободной форме</textarea>
-       </p>
-     <button type="submit">Отправить</button>
+      <p>
+        <label for="user-name">Ваше имя:</label>
+        <input type="text" name="name" placeholder="Имя Фамилия" id="user-name">
+      </p>
+      <p>
+        <label for="user-email">Ваш e-mail:</label>
+        <input type="text" name="email" placeholder="email@example.com" id="user-email">
+      </p>
+      <p>
+        <label for="user-message">Текст письма:</label>
+        <textarea name="message" id="user-message" rows="4">В свободной форме</textarea>
+      </p>
+      <button type="submit">Отправить</button>
     </form>
-    <button class="visually-hidden" type="button" >Закрыть</button>
+    <button class="visually-hidden" type="button">Закрыть</button>
   </section>
 </body>
 
