@@ -4,31 +4,34 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="" https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet"" rel=" stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a href="index.html">
+  <header class="header-catalog">
+    <nav class="main-navigation">
+      <a class="main-logo" href="index.html">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
       </a>
-      <ul>
+      <ul class="navigation-list">
         <li><a href="">Студия</a></li>
         <li><a href="">Клиенты</a></li>
-        <li><a href="">Магазин</a></li>
+        <li class="navigation-current"><a href="">Магазин</a></li>
         <li><a href="">Контакты</a></li>
       </ul>
-      <p>
+      <p class="basket">
         <a href="">Корзина</a>
       </p>
     </nav>
-    <h1>Магазин готовых шаблонов</h1>
+    <h1 class="heading-catalog">Магазин готовых шаблонов</h1>
   </header>
 
   <main>
     <section>
       <h2 class="visually-hidden">Фильтр товаров</h2>
-      <form action="https://echo.htmlacademy.ru" method="get" oninput="">
+      <form class="filter-form" action="https://echo.htmlacademy.ru" method="get" oninput="">
         <fieldset>
           <legend>Стоимость:</legend>
           <label class="visually-hidden" for="range-of-cost">Диапазон стоимости</label>
@@ -38,7 +41,7 @@
           <span>До</span>
           <output name="to">15000</output>
         </fieldset>
-        <fieldset>
+        <fieldset class="filter-grid">
           <legend>Сетка:</legend>
           <ul>
             <li>
@@ -55,7 +58,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="filter-features">
           <legend>Особенности:</legend>
           <ul>
             <li>
@@ -80,7 +83,7 @@
             </li>
           </ul>
         </fieldset>
-        <button type="submit">
+        <button class="filter-button" type="submit">
           Показать
         </button>
       </form>
@@ -88,129 +91,197 @@
 
     <section>
       <h2 class="visually-hidden">Список вариантов дизайна</h2>
-      <div>
+      <div class="sorting">
         <p>Сортировать:</p>
         <ul>
-          <li><a href="">По цене</a></li>
-          <li><a href="">По типу</a></li>
-          <li><a href="">По названию</a></li>
+          <li><a class="sorting-option" href="">По цене</a></li>
+          <li><a class="sorting-option" href="">По типу</a></li>
+          <li><a class="sorting-option" href="">По названию</a></li>
         </ul>
         <p>
-          <a href="" aria-label="По убыванию"></a>
-          <a href="" aria-label="По возрастанию"></a>
+          <a class="down-direction" href="" aria-label="По убыванию"></a>
+          <a class="up-direction" href="" aria-label="По возрастанию"></a>
         </p>
       </div>
-      <ul>
-        <li>
-          <h3>
-            <a href="">Sedona</a>
-          </h3>
-          <p>Информационный сайт для туристов</p>
-          <a href="">9 900 руб.</a>
-          <p>
-            <img src="img/img-sedona.jpg" width="360" height="576" alt="Превью дизайна сайта Седона">
-          </p>
-        </li>
-        <li>
-          <h3>
-            <a href="">Pink App</a>
-          </h3>
-          <p>Продуктовый лендинг приложения для iOS и Android</p>
-          <a href="">9 900 руб.</a>
-          <p>
-            <img src="img/img-pink.jpg" width="360" height="576" alt="Превью дизайна приложения Pink">
-          </p>
+
+      <ul class="catalog-list">
+        <li class="catalog-item">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="360px" height="40px" viewBox="0 0 360 40" enable-background="new 0 0 360 40" xml:space="preserve">
+            <path fill="#4D4D4D" d="M356,0H4C1.8,0,0,1.8,0,4v16v20h360V4C360,1.8,358.2,0,356,0z M22.991,27c-3.866,0-7-3.134-7-7s3.134-7,7-7
+            	s7,3.134,7,7S26.857,27,22.991,27z M46.002,27c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S49.868,27,46.002,27z M69.013,27
+            	c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S72.879,27,69.013,27z" />
+          </svg>
+          <img src="img/img-sedona.jpg" width="360" height="576" alt="Превью дизайна сайта Седона">
+          <div class="item-container">
+            <h3 class="item-name">
+              <a href="">Sedona</a>
+            </h3>
+            <p>Информационный сайт для туристов</p>
+            <a class="button-price" href="">9 900 руб.</a>
+          </div>
         </li>
 
-        <li>
-          <h3>
-            <a href="">Barbershop</a>
-          </h3>
-          <p>Сайт салона красоты. Для мужчин, да.</p>
-          <a href="">9 900 руб.</a>
-          <p>
-            <img src="img/img-barbershop.jpg" width="360" height="576" alt="Превью дизайна сайта Barbershop">
-          </p>
+        <li class="catalog-item">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="360px" height="40px" viewBox="0 0 360 40" enable-background="new 0 0 360 40" xml:space="preserve">
+            <path fill="#4D4D4D" d="M356,0H4C1.8,0,0,1.8,0,4v16v20h360V4C360,1.8,358.2,0,356,0z M22.991,27c-3.866,0-7-3.134-7-7s3.134-7,7-7
+            	s7,3.134,7,7S26.857,27,22.991,27z M46.002,27c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S49.868,27,46.002,27z M69.013,27
+            	c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S72.879,27,69.013,27z" />
+          </svg>
+          <img src="img/img-pink.jpg" width="360" height="576" alt="Превью дизайна приложения Pink">
+          <div class="item-container">
+            <h3 class="item-name">
+              <a href="">Pink App</a>
+            </h3>
+            <p>Продуктовый лендинг приложения для iOS и Android</p>
+            <a class="button-price" href="">9 900 руб.</a>
+          </div>
         </li>
 
-        <li>
-          <h3>
-            <a href="">Mishka</a>
-          </h3>
-          <p>Интернет-магазин вязаных игрушек</p>
-          <a href="">9 900 руб.</a>
-          <p>
-            <img src="img/img-mishka.jpg" width="360" height="576" alt="Превью дизайна интернет-магазина Mishka">
-          </p>
+        <li class="catalog-item">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="360px" height="40px" viewBox="0 0 360 40" enable-background="new 0 0 360 40" xml:space="preserve">
+            <path fill="#4D4D4D" d="M356,0H4C1.8,0,0,1.8,0,4v16v20h360V4C360,1.8,358.2,0,356,0z M22.991,27c-3.866,0-7-3.134-7-7s3.134-7,7-7
+            	s7,3.134,7,7S26.857,27,22.991,27z M46.002,27c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S49.868,27,46.002,27z M69.013,27
+            	c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S72.879,27,69.013,27z" />
+          </svg>
+          <img src="img/img-barbershop.jpg" width="360" height="576" alt="Превью дизайна сайта Barbershop">
+          <div class="item-container">
+            <h3 class="item-name">
+              <a href="">Barbershop</a>
+            </h3>
+            <p>Сайт салона красоты. Для мужчин, да.</p>
+            <a class="button-price" href="">9 900 руб.</a>
+          </div>
         </li>
-        <li>
-          <h3>
-            <a href="">A Plus</a>
-          </h3>
-          <p>Лендинг курсов повышения квалификации</p>
-          <a href="">9 900 руб.</a>
-          <p>
-            <img src="img/img-aplus.jpg" width="360" height="576" alt="Превью дизайна лендинга A PLUS">
-          </p>
+
+        <li class="catalog-item">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="360px" height="40px" viewBox="0 0 360 40" enable-background="new 0 0 360 40" xml:space="preserve">
+            <path fill="#4D4D4D" d="M356,0H4C1.8,0,0,1.8,0,4v16v20h360V4C360,1.8,358.2,0,356,0z M22.991,27c-3.866,0-7-3.134-7-7s3.134-7,7-7
+              s7,3.134,7,7S26.857,27,22.991,27z M46.002,27c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S49.868,27,46.002,27z M69.013,27
+              c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S72.879,27,69.013,27z" />
+          </svg>
+          <img src="img/img-mishka.jpg" width="360" height="576" alt="Превью дизайна интернет-магазина Mishka">
+          <div class="item-container">
+            <h3 class="item-name">
+              <a href="">Mishka</a>
+            </h3>
+            <p>Интернет-магазин вязаных игрушек</p>
+            <a class="button-price" href="">9 900 руб.</a>
+          </div>
         </li>
-        <li>
-          <h3>
-            <a href="">Кваст</a>
-          </h3>
-          <p>Промо-сайт производителя крафтового кваса</p>
-          <a href="">9 900 руб.</a>
-          <p>
-            <img src="img/img-kvast.jpg" width="360" height="576" alt="Превью дизайна сайта КВАСТ">
-          </p>
+
+        <li class="catalog-item">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="360px" height="40px" viewBox="0 0 360 40" enable-background="new 0 0 360 40" xml:space="preserve">
+            <path fill="#4D4D4D" d="M356,0H4C1.8,0,0,1.8,0,4v16v20h360V4C360,1.8,358.2,0,356,0z M22.991,27c-3.866,0-7-3.134-7-7s3.134-7,7-7
+              s7,3.134,7,7S26.857,27,22.991,27z M46.002,27c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S49.868,27,46.002,27z M69.013,27
+              c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S72.879,27,69.013,27z" />
+          </svg>
+          <img src="img/img-aplus.jpg" width="360" height="576" alt="Превью дизайна лендинга A PLUS">
+          <div class="item-container">
+            <h3 class="item-name">
+              <a href="">A Plus</a>
+            </h3>
+            <p>Лендинг курсов повышения квалификации</p>
+            <a class="button-price" href="">9 900 руб.</a>
+          </div>
+        </li>
+
+        <li class="catalog-item">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="360px" height="40px" viewBox="0 0 360 40" enable-background="new 0 0 360 40" xml:space="preserve">
+            <path fill="#4D4D4D" d="M356,0H4C1.8,0,0,1.8,0,4v16v20h360V4C360,1.8,358.2,0,356,0z M22.991,27c-3.866,0-7-3.134-7-7s3.134-7,7-7
+              s7,3.134,7,7S26.857,27,22.991,27z M46.002,27c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S49.868,27,46.002,27z M69.013,27
+              c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S72.879,27,69.013,27z" />
+          </svg>
+          <img src="img/img-kvast.jpg" width="360" height="576" alt="Превью дизайна сайта КВАСТ">
+          <div class="item-container">
+            <h3 class="item-name">
+              <a href="">Кваст</a>
+            </h3>
+            <p>Промо-сайт производителя крафтового кваса</p>
+            <a class="button-price" href="">9 900 руб.</a>
+          </div>
+
         </li>
       </ul>
-      <ul>
-        <li><a>1</a></li>
+
+      <ul class="pagination">
+        <li><a class="pagination-current">1</a></li>
         <li><a href="">2</a></li>
         <li><a href="">3</a></li>
-        <li><a href="">Следующая</a></li>
+        <li><a class="next" href="">Следующая</a></li>
       </ul>
     </section>
 
-    <section>
+    <section class="contact-info">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <div>
+      <div class="container-info">
         <p>Nёrds design studio</p>
         <p>191186, Санкт-Петербург,<br>
           ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7 (812) 275-75-75</p>
-        <a href="">Напишите нам</a>
+        <a class="button-red" href="">Напишите нам</a>
       </div>
     </section>
   </main>
-
-  <footer>
-    <ul>
-      <li><a href="" aria-label="Студия Нёрдс во Вконтакте"></a></li>
-      <li><a href="" aria-label="Студия Нёрдс в Фейсбуке"></a></li>
-      <li><a href="" aria-label="Студия Нёрдс в Инстаграме"></a></li>
+  <footer class="footer">
+    <ul class="social-list">
+      <li>
+        <a class="social-icons" href="" aria-label="Студия Нёрдс во Вконтакте">
+          <svg class="social-icons-vk" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="15px" viewBox="0 0 26 15" enable-background="new 0 0 26 15"
+            xml:space="preserve">
+            <path fill="#FFFFFF" d="M16.138,11.51c0.956-0.309,2.18,2.04,3.483,2.939c0.978,0.681,1.727,0.534,1.727,0.534l3.473-0.05
+            c0,0,1.815-0.112,0.957-1.554c-0.071-0.12-0.503-1.069-2.585-3.022c-2.177-2.043-1.882-1.712,0.739-5.244
+            c1.597-2.153,2.236-3.468,2.036-4.028c-0.192-0.539-1.365-0.399-1.365-0.399L20.69,0.713c-0.381,0.001-0.704,0.119-0.851,0.515
+            c-0.003,0.004-0.621,1.666-1.445,3.079c-1.741,2.989-2.436,3.148-2.724,2.961c-0.661-0.433-0.494-1.737-0.494-2.664
+            c0-2.897,0.432-4.105-0.846-4.417c-0.427-0.104-0.739-0.172-1.828-0.182c-1.392-0.021-2.574,0-3.244,0.329
+            c-0.445,0.223-0.786,0.712-0.579,0.74c0.26,0.035,0.843,0.16,1.155,0.586c0.401,0.552,0.389,1.789,0.389,1.789
+            s0.229,3.411-0.54,3.834c-0.528,0.29-1.25-0.302-2.803-3.016C6.087,2.879,5.488,1.345,5.488,1.345S5.372,1.06,5.162,0.904
+            C4.912,0.719,4.562,0.66,4.562,0.66L0.848,0.684c0,0-0.558,0.016-0.763,0.262C-0.097,1.164,0.07,1.614,0.07,1.614
+            s2.909,6.881,6.203,10.347c3.02,3.182,6.452,2.971,6.452,2.971h1.555c0,0,0.469-0.054,0.709-0.312
+            c0.224-0.24,0.214-0.691,0.214-0.691S15.172,11.82,16.138,11.51z" />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a class="social-icons" href="" aria-label="Студия Нёрдс в Фейсбуке">
+          <svg class="social-icons-fb" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22"
+            xml:space="preserve">
+            <path fill="#FFFFFF" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z" />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a class="social-icons" href="" aria-label="Студия Нёрдс в Инстаграме">
+          <svg class="social-icons-insta" enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="m18 0h-15c-1.65 0-3 1.35-3 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3v-15c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5zm7.5 11h-15v-9h1.181c-.114.482-.181.983-.181 1.5 0 3.59 2.91 6.5 6.5 6.5s6.5-2.91 6.5-6.5c0-.517-.066-1.018-.181-1.5h1.181zm0-11h-4v-4h4z"
+              fill="#fff" /></svg>
+        </a>
+      </li>
     </ul>
     <p>Давайте дружить, это выгодно!</p>
     <p>Скидка 10% для друзей из социальных сетей.</p>
   </footer>
-  <section>
+
+  <!-- Форма -->
+
+  <section class="form">
     <h2>Напишите нам</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
-      <p>
+      <p class="form-item">
         <label for="user-name">Ваше имя:</label>
         <input type="text" name="name" placeholder="Имя Фамилия" id="user-name">
       </p>
-      <p>
+      <p class="form-item">
         <label for="user-email">Ваш e-mail:</label>
-        <input type="text" name="email" placeholder="email@example.com" id="user-email">
+        <input type="email" name="email" placeholder="email@example.com" id="user-email">
       </p>
-      <p>
+      <p class="form-item">
         <label for="user-message">Текст письма:</label>
-        <textarea name="message" id="user-message" rows="4">В свободной форме</textarea>
+        <input type="text" placeholder="В свободной форме" id="user-message">
       </p>
-      <button type="submit">Отправить</button>
+      <button class="form-button button-red" type="submit">Отправить</button>
     </form>
-    <button class="visually-hidden" type="button">Закрыть</button>
+    <button class="button-close" type="button">Закрыть</button>
   </section>
 </body>
 
