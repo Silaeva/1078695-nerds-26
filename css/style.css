@@ -63,6 +63,8 @@ h3 {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
+  padding-top: 83px;
   list-style: none;
 }
 
@@ -76,23 +78,17 @@ h3 {
 .basket {
   display: block;
   color: #000000;
-  margin-top: 83px;
 }
 
-.navigation-list li:first-child {
+.navigation-list li {
   margin-right: 47px;
+  margin-bottom: 20px;
 }
 
-.navigation-list li:nth-child(2) {
-  margin-right: 48px;
-}
-
-.navigation-list li:nth-child(3) {
-  margin-right: 45px;
-}
-
-.navigation-list li:last-child {
-  margin-right: 245px;
+.basket {
+  margin-top: 83px;
+  margin-right: 140px;
+  margin-left: auto;
 }
 
 .navigation-list a:hover,
