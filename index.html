@@ -11,115 +11,132 @@
 
 <body>
   <header class="header-index">
-    <nav class="main-navigation">
-      <a class="main-logo">
-        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
-      </a>
-      <ul class="navigation-list">
-        <li><a href="">Студия</a></li>
-        <li><a href="">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="">Контакты</a></li>
-      </ul>
-      <a class="basket" href="">Корзина</a>
-    </nav>
-    <h1 class="visually-hidden">Студия дизайна Нёрдс</h1>
+    <div class="header-container">
+      <nav class="main-navigation">
+        <a class="main-logo">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
+        </a>
+        <ul class="navigation-list">
+          <li><a href="">Студия</a></li>
+          <li><a href="">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+        <a class="basket" href="">Корзина</a>
+      </nav>
+      <h1 class="visually-hidden">Студия дизайна Нёрдс</h1>
+    </div>
   </header>
+
   <main>
+
     <section class="features">
-      <h2 class="visually-hidden">Преимущества студии</h2>
-
-      <ul class="features-list">
-        <li class="feature-item">
-          <p>Долго, дорого, скрупулезно.</p>
-          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a class="button button-slider" href="">Узнать больше</a>
-        </li>
-        <li class="feature-item">
-          <p>Любим математику как никто другой</p>
-          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-          <a class="button button-slider" href="">Узнать больше</a>
-        </li>
-        <li class="feature-item">
-          <p>Только ночь, только хардкор</p>
-          <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-          <a class="button button-slider" href="">Узнать больше</a>
-        </li>
-      </ul>
-    </section>
-    <section class="services">
-      <h2 class="visually-hidden">Виды услуг студии дизайна Нёрдс</h2>
-      <ul class="services-list">
-        <li class="list-item-websites">
-          <h3>Веб-сайты</h3>
-          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a class="services-button button-red" href="">Заказать</a>
-        </li>
-        <li class="list-item-apps">
-          <h3>Приложения</h3>
-          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class="services-button button-green" href="">Заказать</a>
-        </li>
-        <li class="list-item-presentations">
-          <h3>Презентации</h3>
-          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a class="services-button button-yellow" href="">Заказать</a>
-        </li>
-      </ul>
+      <div class="slider-container">
+        <h2 class="visually-hidden">Преимущества студии</h2>
+        <div class="slider-controls">
+          <button class="active" type="button"></button>
+          <button type="button"></button>
+          <button type="button"></button>
+        </div>
+        <ul class="features-list">
+          <li class="feature-item">
+            <h3>Долго, дорого,<br> скрупулезно.</h3>
+            <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+            <a class="button-slider" href="">Узнать больше</a>
+          </li>
+          <li class="feature-item">
+            <h3>Любим математику как никто другой</h3>
+            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a class="button-slider" href="">Узнать больше</a>
+          </li>
+          <li class="feature-item">
+            <h3>Только ночь, только хардкор</h3>
+            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <a class="button-slider" href="">Узнать больше</a>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <section class="about-studio">
-      <h2 class="visually-hidden">О студии</h2>
-      <p>Мы — маленькая, но гордая<br>
-        дизайн-студия из Краснодара.</p>
-      <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
-        превыше креатива. Работаем не покладая рук, как роботы.</p>
-      <p>Выполняем заказы на разработку:</p>
-      <ul>
-        <li>Веб-сайтов любой сложности</li>
-        <li>Мобильных приложений для iOS и Android</li>
-        <li>Слайдшоу и видео для корпоративных презентаций</li>
-      </ul>
-      <p>с 2004 года Любим точность во всем:</p>
-      <table class="statistics">
-        <tr>
-          <th>146<sup>%</sup></th>
-          <th>100<sup>%</sup></th>
-          <th>50<sup>%</sup></th>
-        </tr>
-        <tr>
-          <td>Уровень самоотдачи</td>
-          <td>Соблюдение сроков</td>
-          <td>Минимальная предоплата</td>
-        </tr>
-      </table>
-    </section>
+    <div class="main-container">
+      <section class="services">
+        <h2 class="visually-hidden">Виды услуг студии дизайна Нёрдс</h2>
+        <ul class="services-list">
+          <li class="list-item-websites">
+            <h3>Веб-сайты</h3>
+            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a class="services-button button-red" href="">Заказать</a>
+          </li>
+          <li class="list-item-apps">
+            <h3>Приложения</h3>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a class="services-button button-green" href="">Заказать</a>
+          </li>
+          <li class="list-item-presentations">
+            <h3>Презентации</h3>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a class="services-button button-yellow" href="">Заказать</a>
+          </li>
+        </ul>
+      </section>
 
-    <section class="partners">
-      <h2 class="visually-hidden">Партнёры студии</h2>
-      <ul>
-        <li>
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/logo-htmlacademy.png" width="199" height="68" alt="Логотип HTML Academy">
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="img/logo-borodinski.png" width="209" height="90" alt="Логотип барбершоп Бородинский">
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="img/logo-pink.png" width="185" height="52" alt="Логотип PINK">
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="img/logo-mishka.png" width="173" height="84" alt="Логотип MISHKA">
-          </a>
-        </li>
-      </ul>
-    </section>
+      <section class="about-studio">
+        <h2 class="visually-hidden">О студии</h2>
+        <div class="colums-about-left">
+          <p>Мы — маленькая, но гордая
+            дизайн-студия из Краснодара.</p>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+            превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <p>Выполняем заказы на разработку:</p>
+          <ul>
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="columns-about-right">
+          <p>с 2004 года Любим точность во всем:</p>
+          <table class="statistics">
+            <tr>
+              <th>146<sup>%</sup></th>
+              <th>100<sup>%</sup></th>
+              <th>50<sup>%</sup></th>
+            </tr>
+            <tr>
+              <td>Уровень самоотдачи</td>
+              <td>Соблюдение сроков</td>
+              <td>Минимальная предоплата</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section class="partners">
+        <h2 class="visually-hidden">Партнёры студии</h2>
+        <ul>
+          <li>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="img/logo-htmlacademy.png" width="199" height="68" alt="Логотип HTML Academy">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="img/logo-borodinski.png" width="209" height="90" alt="Логотип барбершоп Бородинский">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="img/logo-pink.png" width="185" height="52" alt="Логотип PINK">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="img/logo-mishka.png" width="173" height="84" alt="Логотип MISHKA">
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
 
     <section class="contact-info">
       <h2 class="visually-hidden">Контактная информация</h2>
@@ -134,12 +151,14 @@
   </main>
 
   <footer class="footer">
-    <ul class="social-list">
-      <li>
-        <a class="social-icons" href="" aria-label="Студия Нёрдс во Вконтакте">
-          <svg class="social-icons-vk" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="15px" viewBox="0 0 26 15" enable-background="new 0 0 26 15"
-            xml:space="preserve">
-            <path fill="#FFFFFF" d="M16.138,11.51c0.956-0.309,2.18,2.04,3.483,2.939c0.978,0.681,1.727,0.534,1.727,0.534l3.473-0.05
+
+      <div class="container-footer">
+        <ul class="social-list">
+          <li>
+            <a class="social-icons" href="" aria-label="Студия Нёрдс во Вконтакте">
+              <svg class="social-icons-vk" version="1.1" id="Layer_11" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="15px" viewBox="0 0 26 15" enable-background="new 0 0 26 15"
+                xml:space="preserve">
+                <path fill="#FFFFFF" d="M16.138,11.51c0.956-0.309,2.18,2.04,3.483,2.939c0.978,0.681,1.727,0.534,1.727,0.534l3.473-0.05
             c0,0,1.815-0.112,0.957-1.554c-0.071-0.12-0.503-1.069-2.585-3.022c-2.177-2.043-1.882-1.712,0.739-5.244
             c1.597-2.153,2.236-3.468,2.036-4.028c-0.192-0.539-1.365-0.399-1.365-0.399L20.69,0.713c-0.381,0.001-0.704,0.119-0.851,0.515
             c-0.003,0.004-0.621,1.666-1.445,3.079c-1.741,2.989-2.436,3.148-2.724,2.961c-0.661-0.433-0.494-1.737-0.494-2.664
@@ -149,29 +168,30 @@
             C4.912,0.719,4.562,0.66,4.562,0.66L0.848,0.684c0,0-0.558,0.016-0.763,0.262C-0.097,1.164,0.07,1.614,0.07,1.614
             s2.909,6.881,6.203,10.347c3.02,3.182,6.452,2.971,6.452,2.971h1.555c0,0,0.469-0.054,0.709-0.312
             c0.224-0.24,0.214-0.691,0.214-0.691S15.172,11.82,16.138,11.51z" />
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a class="social-icons" href="" aria-label="Студия Нёрдс в Фейсбуке">
-          <svg class="social-icons-fb" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22"
-            xml:space="preserve">
-            <path fill="#FFFFFF" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z" />
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a class="social-icons" href="" aria-label="Студия Нёрдс в Инстаграме">
-          <svg class="social-icons-insta" enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="m18 0h-15c-1.65 0-3 1.35-3 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3v-15c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5zm7.5 11h-15v-9h1.181c-.114.482-.181.983-.181 1.5 0 3.59 2.91 6.5 6.5 6.5s6.5-2.91 6.5-6.5c0-.517-.066-1.018-.181-1.5h1.181zm0-11h-4v-4h4z"
-              fill="#fff" /></svg>
-        </a>
-      </li>
-    </ul>
-    <div class="column-footer">
-      <p>Давайте дружить, это выгодно!</p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-icons" href="" aria-label="Студия Нёрдс в Фейсбуке">
+              <svg class="social-icons-fb" version="1.1" id="Layer_12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22"
+                xml:space="preserve">
+                <path fill="#FFFFFF" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-icons" href="" aria-label="Студия Нёрдс в Инстаграме">
+              <svg class="social-icons-insta" enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m18 0h-15c-1.65 0-3 1.35-3 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3v-15c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5zm7.5 11h-15v-9h1.181c-.114.482-.181.983-.181 1.5 0 3.59 2.91 6.5 6.5 6.5s6.5-2.91 6.5-6.5c0-.517-.066-1.018-.181-1.5h1.181zm0-11h-4v-4h4z"
+                  fill="#fff" /></svg>
+            </a>
+          </li>
+        </ul>
+        <div class="footer-column-right">
+        <p>Давайте дружить, это выгодно!</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </div>
   </footer>
 
