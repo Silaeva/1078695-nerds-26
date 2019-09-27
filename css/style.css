@@ -387,7 +387,7 @@ a.services-button {
   margin-bottom: 40px;
 }
 
-                      /* About studio*/
+                /* About studio*/
 
 
 .about-studio {
@@ -492,23 +492,29 @@ a.services-button {
 
 
 .contact-info {
-  max-width: 1440px;
-  min-width: 1440px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 70px;
-  position: relative;
   height: 416px;
   background-image: url("../img/map-with-marker.jpg");
   background-position: center;
+  background-repeat: no-repeat;
   background-color: #b5b5b5;
+}
+
+.wrapper-info {
+  position: relative;
+  max-width: 1200px;
+  min-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container-info {
   display: block;
   position: absolute;
   top: 54px;
-  left: 140px;
+  left: 20px;
   width: 319px;
   height: 308px;
   background-color: #ffffff;
