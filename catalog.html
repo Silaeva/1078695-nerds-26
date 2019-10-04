@@ -36,27 +36,44 @@
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="get" oninput="">
           <fieldset>
             <legend>Стоимость:</legend>
-            <label class="visually-hidden" for="range-of-cost">Диапазон стоимости</label>
-            <input type="range" min="0" max="20000" id="range-of-cost">
-            <span>От</span>
-            <output name="from">0</output>
-            <span>До</span>
-            <output name="to">15000</output>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от<input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до<input name="max-price" type="text" value="15 000"></label>
+              </div>
+            </div>
+
           </fieldset>
           <fieldset class="filter-grid">
             <legend>Сетка:</legend>
             <ul>
               <li>
-                <input type="radio" name="grid" value="adaptive" id="adaptive" checked>
-                <label for="adaptive">Адаптивная</label>
+                <input class="radio-input visually-hidden" type="radio" name="grid" value="adaptive" id="adaptive" checked>
+                <label class="radio" for="adaptive">
+                  <span class="radio-button"></span>
+                  Адаптивная
+                </label>
               </li>
               <li>
-                <input type="radio" name="grid" value="fixed" id="fixed">
-                <label for="fixed">Фиксированная</label>
+                <input class="radio-input visually-hidden" type="radio" name="grid" value="fixed" id="fixed">
+                <label class="radio" for="fixed">
+                  <span class="radio-button"></span>
+                  Фиксированная
+                </label>
               </li>
               <li>
-                <input type="radio" name="grid" value="stretch" id="stretch">
-                <label for="stretch">Резиновая</label>
+                <input class="radio-input visually-hidden" type="radio" name="grid" value="stretch" id="stretch">
+                <label class="radio" for="stretch">
+                  <span class="radio-button"></span>
+                  Резиновая
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -64,24 +81,39 @@
             <legend>Особенности:</legend>
             <ul>
               <li>
-                <input type="checkbox" name="slider" id="slider" checked>
-                <label for="slider">Слайдер</label>
+                <input class="input-check visually-hidden" type="checkbox" name="slider" id="slider" checked>
+                <label for="slider">
+                  <span class="check-box"></span>
+                  Слайдер
+                </label>
               </li>
               <li>
-                <input type="checkbox" name="block-features" id="block-features">
-                <label for="block-features">Блок преимуществ</label>
+                <input class="input-check visually-hidden" type="checkbox" name="block-features" id="block-features">
+                <label for="block-features">
+                  <span class="check-box"></span>
+                  Блок преимуществ
+                </label>
               </li>
               <li>
-                <input type="checkbox" name="news" id="news" checked>
-                <label for="news">Новости</label>
+                <input class="input-check visually-hidden" type="checkbox" name="news" id="news" checked>
+                <label for="news">
+                  <span class="check-box"></span>
+                  Новости
+                </label>
               </li>
               <li>
-                <input type="checkbox" name="gallery" id="gallery">
-                <label for="gallery">Галерея</label>
+                <input class="input-check visually-hidden" type="checkbox" name="gallery" id="gallery">
+                <label for="gallery">
+                  <span class="check-box"></span>
+                  Галерея
+                </label>
               </li>
               <li>
-                <input type="checkbox" name="basket" id="basket">
-                <label for="basket">Корзина</label>
+                <input class="input-check visually-hidden" type="checkbox" name="basket" id="basket">
+                <label for="basket">
+                  <span class="check-box"></span>
+                  Корзина
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -101,7 +133,7 @@
             <li><a class="sorting-option" href="">По типу</a></li>
             <li><a class="sorting-option" href="">По названию</a></li>
           </ul>
-          <p>
+          <p class="arrows">
             <a class="down-direction" href="" aria-label="По убыванию"></a>
             <a class="up-direction" href="" aria-label="По возрастанию"></a>
           </p>
@@ -119,7 +151,7 @@
               <h3 class="item-name">
                 <a href="">Sedona</a>
               </h3>
-              <p>Информационный сайт для туристов</p>
+              <p>Информационный сайт для&nbsp;туристов</p>
               <a class="button-price" href="">9 900 руб.</a>
             </div>
           </li>
@@ -279,14 +311,16 @@
   <section class="form">
     <h2>Напишите нам</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
-      <p class="form-item">
-        <label for="user-name">Ваше имя:</label>
-        <input type="text" name="name" placeholder="Имя Фамилия" id="user-name">
-      </p>
-      <p class="form-item">
-        <label for="user-email">Ваш e-mail:</label>
-        <input type="email" name="email" placeholder="email@example.com" id="user-email">
-      </p>
+      <div class="form-wrapper">
+        <p class="form-item">
+          <label for="user-name">Ваше имя:</label>
+          <input type="text" name="name" placeholder="Имя Фамилия" id="user-name">
+        </p>
+        <p class="form-item">
+          <label for="user-email">Ваш e-mail:</label>
+          <input type="email" name="email" placeholder="email@example.com" id="user-email">
+        </p>
+      </div>
       <p class="form-item">
         <label for="user-message">Текст письма:</label>
         <textarea name="message" id="user-message" rows="4">В свободной форме</textarea>

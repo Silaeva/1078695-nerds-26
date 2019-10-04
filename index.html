@@ -33,11 +33,15 @@
     <section class="features">
       <div class="slider-container">
         <h2 class="visually-hidden">Преимущества студии</h2>
-        <div class="slider-controls">
+  <!--
+
+          <div class="slider-controls">
           <button class="active" type="button"></button>
           <button type="button"></button>
           <button type="button"></button>
         </div>
+
+  -->
         <ul class="features-list">
           <li class="feature-item">
             <h3>Долго, дорого,<br> скрупулезно.</h3>
@@ -64,7 +68,7 @@
         <ul class="services-list">
           <li class="list-item-websites">
             <h3>Веб-сайты</h3>
-            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <p>Мир никогда не будет прежним после&nbsp;того как увидит ваш сайт!</p>
             <a class="services-button button-red" href="">Заказать</a>
           </li>
           <li class="list-item-apps">
@@ -74,7 +78,7 @@
           </li>
           <li class="list-item-presentations">
             <h3>Презентации</h3>
-            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <p>Вы даже не подозреваете, насколько&nbsp;вы изумительны!</p>
             <a class="services-button button-yellow" href="">Заказать</a>
           </li>
         </ul>
@@ -202,14 +206,16 @@
   <section class="form">
     <h2>Напишите нам</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
-      <p class="form-item">
-        <label for="user-name">Ваше имя:</label>
-        <input type="text" name="name" placeholder="Имя Фамилия" id="user-name">
-      </p>
-      <p class="form-item">
-        <label for="user-email">Ваш e-mail:</label>
-        <input type="email" name="email" placeholder="email@example.com" id="user-email">
-      </p>
+      <div class="form-wrapper">
+        <p class="form-item">
+          <label for="user-name">Ваше имя:</label>
+          <input type="text" name="name" placeholder="Имя Фамилия" id="user-name">
+        </p>
+        <p class="form-item">
+          <label for="user-email">Ваш e-mail:</label>
+          <input type="email" name="email" placeholder="email@example.com" id="user-email">
+        </p>
+      </div>
       <p class="form-item">
         <label for="user-message">Текст письма:</label>
         <textarea name="message" id="user-message" rows="4">В свободной форме</textarea>
