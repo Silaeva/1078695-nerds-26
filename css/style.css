@@ -152,6 +152,7 @@ h3 {
 }
 
 .slider-container {
+  position: relative;
   width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -206,54 +207,62 @@ h3 {
   padding-left: 0;
 }
 
-.feature-item:nth-child(1) {
+.feature-item-1 {
   background-image: url("../img/slide-smartphones.png");
   background-repeat: no-repeat;
   background-position: 93% 6px;
-
-  /*  Временно  */
-  display: block;
 }
 
-.feature-item:nth-child(2) {
+.feature-item-2 {
   background-image: url("../img/slide-desktops.png");
   background-repeat: no-repeat;
-  background-position: 100% 0;
+  background-position: 100% -11px;
 }
 
-.feature-item:nth-child(3) {
+.feature-item-3 {
   background-image: url("../img/slide-gadgets.png");
   background-repeat: no-repeat;
-  background-position: 100% 20px;
+  background-position: 100% 7px;
 }
 
                     /*Slider controls*/
 
 .slider-controls {
   position: absolute;
+  bottom: 90px;
+  left: 556px;
+  z-index: 20;
   font-size: 0;
 }
 
-.slider-input + label {
- display: inline-block;
- width: 18px;
- height: 18px;
- margin-right: 17px;
- vertical-align: top;
- background-color: #ffffff;
- border-radius: 50%;
- border: 1px solid red;
+.slider-controls label {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 17px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-
-
-
-/*
-.slider-input1:checked ~ .feature-item:first-child,
-.slider-input2:checked ~ .feature-item:nth-child(2),
-.slider-input3:checked ~ .feature-item:nth-child(3){
+.slider-input1:checked ~ .slider-container .feature-item-1,
+.slider-input2:checked ~ .slider-container .feature-item-2,
+.slider-input3:checked ~ .slider-container .feature-item-3{
   display: block;
-}*/
+}
+
+.slider-input1:checked ~ .slider-container label:first-child::after,
+.slider-input2:checked ~ .slider-container label:nth-child(2)::after,
+.slider-input3:checked ~ .slider-container label:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/slider-button.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 
                      /* Services */
 
