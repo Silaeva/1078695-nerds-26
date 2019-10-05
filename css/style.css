@@ -463,13 +463,9 @@ h3 {
 .partners ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  width: 1090px;
   min-height: 180px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 16px;
 }
 
 .partners::before,
@@ -502,9 +498,14 @@ h3 {
   content: "";
   position: absolute;
   top: 64px;
+  margin-left: 50px;
   width: 2px;
   height: 52px;
   background-color: #eeeeee;
+}
+
+.partners li:nth-child(4n):after {
+  display: none;
 }
 
                       /* Contacts*/
@@ -520,6 +521,11 @@ h3 {
   background-color: #b5b5b5;
 }
 
+.contact-info iframe {
+  max-width: 100%;
+  min-width: 1200px;
+}
+
 .wrapper-info {
   position: relative;
   max-width: 1200px;
@@ -532,6 +538,7 @@ h3 {
 .container-info {
   display: flex;
   flex-direction: column;
+  margin-top: -425px;
   padding-top: 49px;
   padding-right: 50px;
   padding-left: 50px;
@@ -935,6 +942,7 @@ h3 {
   padding-left: 35px;
   color: #283136;
   line-height: 20px;
+  cursor: pointer;
 }
 
 .filter-grid ul,
@@ -944,45 +952,48 @@ h3 {
 
                         /* Radio-button */
 
-.radio-button {
+.radio::before {
+  content: "";
   position: absolute;
   left: 0;
   width: 25px;
   height: 25px;
   background-image: url("../img/radio-off-normal.svg");
+  cursor: pointer;
 }
 
-.radio-input:checked + label .radio-button {
+.radio-input:checked + .radio::before {
   background-image: url("../img/radio-on-normal.svg");
 }
 
 
-.radio-input:focus + label .radio-button,
-.radio-input:hover + label .radio-button {
+.radio-input:focus + .radio::before,
+.radio-input:hover + .radio::before {
   background-image: url("../img/radio-off-focus.svg");
 }
 
-.radio-input:checked:focus + label .radio-button,
-.radio-input:checked:hover + label .radio-button {
+.radio-input:checked:focus + .radio::before,
+.radio-input:checked:hover + .radio::before {
   background-image: url("../img/radio-on-focus.svg");
 }
 
-.radio-input:disabled + label .radio-button {
+.radio-input:disabled + .radio::before {
   background-image: url("../img/radio-off-disabled.svg");
 }
 
-.radio-input:checked:disabled + label .radio-button {
+.radio-input:checked:disabled + .radio::before {
   background-image: url("../img/radio-on-disabled.svg");
 
 }
 
-.radio-input:disabled + label {
+.radio-input:disabled + .radio {
   color: #bec1c2;
 }
 
                 /* check-box */
 
-.check-box {
+.check-box::before {
+  content: "";
   position: absolute;
   left: 0;
   width: 27px;
@@ -991,29 +1002,29 @@ h3 {
   background-repeat: no-repeat;
 }
 
-.input-check:checked + label .check-box {
+.input-check:checked + .check-box::before {
   background-image: url("../img/checkbox-on.svg");
 }
 
-.input-check:focus + label .check-box,
-.input-check:hover + label .check-box {
+.input-check:focus + .check-box::before,
+.input-check:hover + .check-box::before {
   background-image: url("../img/checkbox-off-focus.svg");
 }
 
-.input-check:checked:focus + label .check-box,
-.input-check:checked:hover + label .check-box {
+.input-check:checked:focus + .check-box::before,
+.input-check:checked:hover + .check-box::before {
   background-image: url("../img/checkbox-on-focus.svg");
 }
 
-.input-check:disabled + label .check-box {
+.input-check:disabled + .check-box::before {
   background-image: url("../img/checkbox-off-disabled.svg");
 }
 
-.input-check:checked:disabled + label .check-box {
+.input-check:checked:disabled + .check-box::before {
   background-image: url("../img/checkbox-on-disabled.svg");
 }
 
-.input-check:disabled + label {
+.input-check:disabled + .check-box {
   color: #bec1c2;
 }
 
