@@ -144,7 +144,8 @@ h3 {
   background-color: #eeeeee;
 }
 
-.features-list {
+.features-list,
+.slider-controls {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -206,13 +207,12 @@ h3 {
 }
 
 .feature-item:nth-child(1) {
-  display: block;
-}
-
-.feature-item:nth-child(1) {
   background-image: url("../img/slide-smartphones.png");
   background-repeat: no-repeat;
   background-position: 93% 6px;
+
+  /*  Временно  */
+  display: block;
 }
 
 .feature-item:nth-child(2) {
@@ -226,6 +226,34 @@ h3 {
   background-repeat: no-repeat;
   background-position: 100% 20px;
 }
+
+                    /*Slider controls*/
+
+.slider-controls {
+  position: absolute;
+  font-size: 0;
+}
+
+.slider-input + label {
+ display: inline-block;
+ width: 18px;
+ height: 18px;
+ margin-right: 17px;
+ vertical-align: top;
+ background-color: #ffffff;
+ border-radius: 50%;
+ border: 1px solid red;
+}
+
+
+
+
+/*
+.slider-input1:checked ~ .feature-item:first-child,
+.slider-input2:checked ~ .feature-item:nth-child(2),
+.slider-input3:checked ~ .feature-item:nth-child(3){
+  display: block;
+}*/
 
                      /* Services */
 
@@ -511,6 +539,7 @@ h3 {
                       /* Contacts*/
 
 .contact-info {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 70px;
@@ -522,23 +551,26 @@ h3 {
 }
 
 .contact-info iframe {
-  max-width: 100%;
+  width: 100%;
   min-width: 1200px;
+  height: 100%;
 }
 
 .wrapper-info {
-  position: relative;
+  position: absolute;
   max-width: 1200px;
   min-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .container-info {
   display: flex;
   flex-direction: column;
-  margin-top: -425px;
   padding-top: 49px;
   padding-right: 50px;
   padding-left: 50px;
