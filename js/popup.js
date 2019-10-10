@@ -32,7 +32,7 @@ close.addEventListener("click", function(evt) {
   popup.classList.remove("form-error");
 });
 
-popup.addEventListener("submit", function(evt) {
+submit.addEventListener("click", function(evt) {
   if (!user.value || !email.value) {
     evt.preventDefault();
     popup.classList.remove("form-error");

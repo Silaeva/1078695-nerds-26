@@ -78,6 +78,10 @@ h3 {
   margin-right: 202px;
 }
 
+.main-logo img {
+  pointer-events: none;
+}
+
 .navigation-list a,
 .basket {
   display: block;
@@ -498,6 +502,7 @@ h3 {
   position: relative;
   width: 300px;
   height: 180px;
+  cursor: pointer;
 }
 
 .partners li:first-child,
@@ -508,6 +513,10 @@ h3 {
 .partners a {
   position: absolute;
   opacity: 0.2;
+}
+
+.partners img {
+  pointer-events: none;
 }
 
 .link-htmlacademy {
@@ -831,6 +840,10 @@ h3 {
   border-radius: 50%;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.social-icons svg {
+  pointer-events: none;
 }
 
 .social-icons-vk {
@@ -1284,7 +1297,7 @@ h3 {
 
 .catalog-list .catalog-item:nth-last-child(1),
 .catalog-list .catalog-item:nth-last-child(2) {
-  margin-bottom: 60px;
+  margin-bottom: 73px;
 }
 
 .catalog-item img {
@@ -1325,6 +1338,9 @@ h3 {
 }
 
 .item-container p {
+  width: 100%;
+  padding-left: 62px;
+  padding-right: 62px;
   margin-bottom: 29px;
   margin-left: 62px;
   margin-right: 62px;
@@ -1364,11 +1380,9 @@ h3 {
 }
 
 .pagination a {
-  display: block;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
+  padding: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   color: #000000;
   background-color: #eeeeee;
   border-radius: 2px;
@@ -1380,13 +1394,19 @@ h3 {
 }
 
 a.pagination-current {
+  padding-top: 12px;
+  padding-right: 18px;
+  padding-bottom: 13px;
+  padding-left: 17px;
   background-color: #ffffff;
   border: 3px solid #dbdbdb;
-  line-height: 44px;
 }
 
 a.next {
-  width: 260px;
+  padding-top: 16px;
+  padding-right: 78px;
+  padding-bottom: 16px;
+  padding-left: 80px;
 }
 
 .pagination a:hover:not(.pagination-current),
