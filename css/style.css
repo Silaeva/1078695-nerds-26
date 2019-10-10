@@ -41,9 +41,7 @@ h3 {
   overflow: hidden;
 }
 
-                         /* Header */
-
-
+/* Header */
 .header-index,
 .header-catalog {
   background-color: #eeeeee;
@@ -128,17 +126,16 @@ h3 {
   padding-bottom: 2px;
 }
 
-.main-logo:hover {
+.main-logo:hover,
+.main-logo:focus {
   opacity: 0.8;
 }
 
-.main-logo:focus {
+.main-logo:active {
   opacity: 0.3;
 }
 
-                  /* Slider */
-
-
+/* Slider */
 .features {
   position: relative;
   background-color: #eeeeee;
@@ -225,8 +222,7 @@ h3 {
   background-position: 100% 7px;
 }
 
-                    /*Slider controls*/
-
+/*Slider controls*/
 .slider-controls {
   position: absolute;
   bottom: 90px;
@@ -245,15 +241,15 @@ h3 {
   cursor: pointer;
 }
 
-.slider-input1:checked ~ .slider-container .feature-item-1,
-.slider-input2:checked ~ .slider-container .feature-item-2,
-.slider-input3:checked ~ .slider-container .feature-item-3{
+.slider-input1:checked~.slider-container .feature-item-1,
+.slider-input2:checked~.slider-container .feature-item-2,
+.slider-input3:checked~.slider-container .feature-item-3 {
   display: block;
 }
 
-.slider-input1:checked ~ .slider-container label:first-child::after,
-.slider-input2:checked ~ .slider-container label:nth-child(2)::after,
-.slider-input3:checked ~ .slider-container label:nth-child(3)::after {
+.slider-input1:checked~.slider-container label:first-child::after,
+.slider-input2:checked~.slider-container label:nth-child(2)::after,
+.slider-input3:checked~.slider-container label:nth-child(3)::after {
   content: "";
   position: absolute;
   width: 18px;
@@ -263,10 +259,7 @@ h3 {
   background-repeat: no-repeat;
 }
 
-
-                     /* Services */
-
-
+/* Services */
 .main-container {
   max-width: 1200px;
   min-width: 1200px;
@@ -309,7 +302,7 @@ h3 {
 
 .services-button {
   padding-top: 16px;
-  padding-right: 40px;
+  padding-right: 41px;
   padding-bottom: 15px;
   padding-left: 40px;
   text-transform: uppercase;
@@ -404,13 +397,11 @@ h3 {
   margin-bottom: 40px;
 }
 
-                /* About studio*/
-
-
+/* About studio*/
 .about-studio {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 49px;
+  margin-bottom: 48px;
 }
 
 .colums-about-left {
@@ -461,7 +452,6 @@ h3 {
   margin-bottom: 24px;
 }
 
-
 .about-studio li::before {
   content: "";
   display: inline-block;
@@ -471,7 +461,6 @@ h3 {
   height: 2px;
   background-color: #fb565a;
 }
-
 
 .statistics th,
 .statistics td {
@@ -500,26 +489,45 @@ h3 {
 .partners ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 180px;
-}
-
-.partners::before,
-.partners::after {
-  content: "";
-  display: block;
-  width: 1160px;
-  height: 2px;
-  background-color: #eeeeee;
-}
-
-.partners::after {
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
   margin-bottom: 80px;
 }
 
+.partners li {
+  position: relative;
+  width: 300px;
+  height: 180px;
+}
+
+.partners li:first-child,
+.partners li:nth-child(4n) {
+  width: 280px;
+}
+
 .partners a {
+  position: absolute;
   opacity: 0.2;
+}
+
+.link-htmlacademy {
+  top: 62px;
+  left: 31px;
+}
+
+.link-borodinski {
+  top: 46px;
+  left: 46px;
+}
+
+.link-pink {
+  top: 65px;
+  left: 58px;
+}
+
+.link-mishka {
+  top: 52px;
+  left: 64px;
 }
 
 .partners a:hover,
@@ -535,7 +543,7 @@ h3 {
   content: "";
   position: absolute;
   top: 64px;
-  margin-left: 50px;
+  right: 0;
   width: 2px;
   height: 52px;
   background-color: #eeeeee;
@@ -545,8 +553,7 @@ h3 {
   display: none;
 }
 
-                      /* Contacts*/
-
+/* Contacts*/
 .contact-info {
   position: relative;
   margin-left: auto;
@@ -560,9 +567,11 @@ h3 {
 }
 
 .contact-info iframe {
+  position: absolute;
   width: 100%;
   min-width: 1200px;
   height: 100%;
+  z-index: 1;
 }
 
 .wrapper-info {
@@ -589,6 +598,7 @@ h3 {
   width: 319px;
   height: 308px;
   background-color: #ffffff;
+  z-index: 1;
 }
 
 .container-info p:first-child {
@@ -611,11 +621,11 @@ h3 {
 }
 
 .container-info p:nth-child(3) {
-  margin-bottom: 38px;
+  margin-bottom: 36px;
 }
 
 .container-info a {
-  padding: 15px 44px 11px;
+  padding: 14px 44px 12px;
   font-weight: 500;
   text-transform: uppercase;
   color: #ffffff;
@@ -623,15 +633,15 @@ h3 {
   background-color: #fb565a;
 }
 
-                     /* form*/
-
+/* form*/
 .form {
   display: flex;
   flex-direction: column;
   position: fixed;
   left: 50%;
   margin-left: -480px;
-  bottom: 180px;
+  top: 50%;
+  margin-top: -295px;
   padding-top: 67px;
   padding-right: 100px;
   padding-bottom: 84px;
@@ -639,8 +649,53 @@ h3 {
   width: 960px;
   height: 590px;
   background-color: #ffffff;
-  box-shadow: 0 20px 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
   display: none;
+  z-index: 100;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+
+.form-show {
+  display: block;
+  animation-name: bounce;
+  animation-duration: 0.6s;
+}
+
+.form-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
 }
 
 .form-wrapper {
@@ -662,7 +717,6 @@ h3 {
   font-weight: 500;
 }
 
-
 .form-item label {
   line-height: 18px;
   font-weight: 700;
@@ -670,7 +724,7 @@ h3 {
   cursor: pointer;
 }
 
-.form-item input{
+.form-item input {
   width: 359px;
   height: 50px;
 }
@@ -748,10 +802,8 @@ h3 {
   opacity: 0.1;
 }
 
-                          /* Footer */
-
-
-.container-footer  {
+/* Footer */
+.container-footer {
   display: flex;
   max-width: 1200px;
   min-width: 1200px;
@@ -762,12 +814,11 @@ h3 {
   margin-bottom: 65px;
 }
 
-
 .social-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 143px;
-  width: 257px;
+  margin-right: 139px;
+  width: 260px;
   justify-content: space-between;
   list-style: none;
 }
@@ -812,11 +863,11 @@ h3 {
 }
 
 .footer-column-right {
-  padding-top: 7px;
+  padding-top: 5px;
 }
 
 .footer-column-right p:first-child {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
@@ -827,9 +878,7 @@ h3 {
   line-height: 22px;
 }
 
-
-                     /* Catalog.html */
-
+/* Catalog.html */
 .header-catalog {
   margin-bottom: 51px;
 }
@@ -860,9 +909,20 @@ h3 {
 }
 
 .filter-form fieldset {
-  margin-bottom: 56px;
   padding: 0;
   border: none;
+}
+
+.filter-price {
+  margin-bottom: 56px;
+}
+
+.filter-grid {
+  margin-bottom: 43px;
+}
+
+.filter-features {
+  margin-bottom: 48px;
 }
 
 .filter-form legend {
@@ -960,13 +1020,18 @@ h3 {
   text-align: right;
 }
 
+.filter-grid ul,
+.filter-features ul {
+  margin-left: 1px;
+}
+
 .filter-grid li:first-of-type,
 .filter-grid li:nth-of-type(2) {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .filter-features li:not(:last-of-type) {
-  margin-bottom: 17px;
+  margin-bottom: 16px;
 }
 
 .filter-grid legend,
@@ -991,8 +1056,7 @@ h3 {
   position: relative;
 }
 
-                        /* Radio-button */
-
+/* Radio-button */
 .radio::before {
   content: "";
   position: absolute;
@@ -1003,36 +1067,33 @@ h3 {
   cursor: pointer;
 }
 
-.radio-input:checked + .radio::before {
+.radio-input:checked+.radio::before {
   background-image: url("../img/radio-on-normal.svg");
 }
 
-
-.radio-input:focus + .radio::before,
-.radio-input:hover + .radio::before {
+.radio-input:focus+.radio::before,
+.radio-input:hover+.radio::before {
   background-image: url("../img/radio-off-focus.svg");
 }
 
-.radio-input:checked:focus + .radio::before,
-.radio-input:checked:hover + .radio::before {
+.radio-input:checked:focus+.radio::before,
+.radio-input:checked:hover+.radio::before {
   background-image: url("../img/radio-on-focus.svg");
 }
 
-.radio-input:disabled + .radio::before {
+.radio-input:disabled+.radio::before {
   background-image: url("../img/radio-off-disabled.svg");
 }
 
-.radio-input:checked:disabled + .radio::before {
+.radio-input:checked:disabled+.radio::before {
   background-image: url("../img/radio-on-disabled.svg");
-
 }
 
-.radio-input:disabled + .radio {
+.radio-input:disabled+.radio {
   color: #bec1c2;
 }
 
-                /* check-box */
-
+/* check-box */
 .check-box::before {
   content: "";
   position: absolute;
@@ -1043,37 +1104,39 @@ h3 {
   background-repeat: no-repeat;
 }
 
-.input-check:checked + .check-box::before {
+.input-check:checked+.check-box::before {
   background-image: url("../img/checkbox-on.svg");
 }
 
-.input-check:focus + .check-box::before,
-.input-check:hover + .check-box::before {
+.input-check:focus+.check-box::before,
+.input-check:hover+.check-box::before {
   background-image: url("../img/checkbox-off-focus.svg");
 }
 
-.input-check:checked:focus + .check-box::before,
-.input-check:checked:hover + .check-box::before {
+.input-check:checked:focus+.check-box::before,
+.input-check:checked:hover+.check-box::before {
   background-image: url("../img/checkbox-on-focus.svg");
 }
 
-.input-check:disabled + .check-box::before {
+.input-check:disabled+.check-box::before {
   background-image: url("../img/checkbox-off-disabled.svg");
 }
 
-.input-check:checked:disabled + .check-box::before {
+.input-check:checked:disabled+.check-box::before {
   background-image: url("../img/checkbox-on-disabled.svg");
 }
 
-.input-check:disabled + .check-box {
+.input-check:disabled+.check-box {
   color: #bec1c2;
 }
 
-                /* filter button */
-
+/* filter button */
 .filter-button {
-  width: 260px;
-  height: 50px;
+  margin-left: 3px;
+  padding-top: 17px;
+  padding-right: 90px;
+  padding-bottom: 16px;
+  padding-left: 88px;
   font-weight: 500;
   text-transform: uppercase;
   border: none;
@@ -1092,6 +1155,7 @@ h3 {
   box-shadow: inset 0 3px #bfbfbf;
 }
 
+/* Sorting */
 .sorting {
   display: flex;
   width: 760px;
@@ -1141,7 +1205,6 @@ h3 {
   position: absolute;
   width: 11px;
   height: 10px;
-
 }
 
 .arrows {
@@ -1180,12 +1243,7 @@ h3 {
   opacity: 1;
 }
 
-
-
-
-                 /*Карточки товара*/
-
-
+/*Карточки товара*/
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
@@ -1200,7 +1258,7 @@ h3 {
   bottom: 0;
   background-color: #eeeeee;
   width: 360px;
-  height: 231px;
+  min-height: 231px;
   display: none;
 }
 
@@ -1273,6 +1331,7 @@ h3 {
   color: #666666;
   line-height: 18px;
   text-align: center;
+  white-space: pre-wrap;
 }
 
 .button-price {
