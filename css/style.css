@@ -210,21 +210,18 @@ h3 {
 
 .feature-item-1 {
   background-image: url("../img/slide-smartphones.png");
-  background-color: #eeeeee;
   background-repeat: no-repeat;
   background-position: 93% 6px;
 }
 
 .feature-item-2 {
   background-image: url("../img/slide-desktops.png");
-  background-color: #eeeeee;
   background-repeat: no-repeat;
   background-position: 100% -11px;
 }
 
 .feature-item-3 {
   background-image: url("../img/slide-gadgets.png");
-  background-color: #eeeeee;
   background-repeat: no-repeat;
   background-position: 100% 7px;
 }
