@@ -210,18 +210,21 @@ h3 {
 
 .feature-item-1 {
   background-image: url("../img/slide-smartphones.png");
+  background-color: #eeeeee;
   background-repeat: no-repeat;
   background-position: 93% 6px;
 }
 
 .feature-item-2 {
   background-image: url("../img/slide-desktops.png");
+  background-color: #eeeeee;
   background-repeat: no-repeat;
   background-position: 100% -11px;
 }
 
 .feature-item-3 {
   background-image: url("../img/slide-gadgets.png");
+  background-color: #eeeeee;
   background-repeat: no-repeat;
   background-position: 100% 7px;
 }
@@ -237,6 +240,7 @@ h3 {
 
 .slider-controls label {
   display: inline-block;
+  vertical-align: top;
   width: 18px;
   height: 18px;
   margin-right: 17px;
@@ -435,6 +439,7 @@ h3 {
 .columns-about-right {
   width: 360px;
   background-image: url("../img/nerds-illustration.jpg");
+  background-color: #ffffff;
   background-position: top;
   background-repeat: no-repeat;
 }
@@ -459,6 +464,7 @@ h3 {
 .about-studio li::before {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   margin-bottom: 4px;
   margin-right: 10px;
   width: 25px;
@@ -633,7 +639,11 @@ h3 {
   margin-bottom: 36px;
 }
 
-.container-info a {
+.phone-number {
+  color: inherit;
+}
+
+.write-us {
   padding: 14px 44px 12px;
   font-weight: 500;
   text-transform: uppercase;
@@ -826,14 +836,15 @@ h3 {
 .social-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 139px;
-  width: 260px;
-  justify-content: space-between;
+  margin-right: 127px;
+  width: 272px;
   list-style: none;
 }
 
 .social-icons {
   display: block;
+  margin-right: 12px;
+  margin-bottom: 12px;
   width: 78px;
   height: 78px;
   background-color: #e1e1e1;
@@ -1010,6 +1021,7 @@ h3 {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: middle;
   width: 50%;
   font-size: 16px;
   text-transform: uppercase;
@@ -1203,8 +1215,12 @@ h3 {
   text-transform: uppercase;
 }
 
-.sorting-option:hover,
-.sorting-option:focus {
+.sorting-current {
+  opacity: 1;
+}
+
+.sorting-option:hover:not(.sorting-current),
+.sorting-option:focus:not(.sorting-current) {
   opacity: 0.6;
 }
 
@@ -1231,8 +1247,8 @@ h3 {
   opacity: 0.2;
 }
 
-.down-direction:hover::after,
-.down-direction:focus::after {
+.down-direction:hover:not(.arrow-current)::after,
+.down-direction:focus:not(.arrow-current)::after {
   opacity: 0.6;
 }
 
@@ -1247,12 +1263,16 @@ h3 {
   opacity: 0.2;
 }
 
-.up-direction:hover::after,
-.up-direction:focus::after {
+.up-direction:hover:not(.arrow-current)::after,
+.up-direction:focus:not(.arrow-current)::after {
   opacity: 0.6;
 }
 
 .up-direction:active::after {
+  opacity: 1;
+}
+
+.arrow-current::after {
   opacity: 1;
 }
 
@@ -1374,7 +1394,7 @@ h3 {
 
 /*  Pagination  */
 .pagination {
-  margin-bottom: 60px;
+  margin-bottom: 73px;
   list-style: none;
   display: flex;
 }
