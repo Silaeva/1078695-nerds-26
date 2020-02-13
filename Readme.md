@@ -4,7 +4,6 @@
 * Наставник: [Мария Чернова] (https://htmlacademy.ru/profile/id49571).
 
 ---
-
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
 
